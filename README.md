@@ -4,6 +4,9 @@
 The purpose of this project is to monitor mempool transactions and respond accordingly. For example, you can buy a token as soon as a specific owner adds liquidity. Additionally, the project allows for testing a token before purchasing it. This is done by listening for liquidity events and, once the owner adds liquidity, creating a mainnet fork to perform various tests on the token before making a purchase. You will need to adjust the scripts to suit your specific goals. For instance, I modified the scripts to test which block a random user can buy the token.  
 To test this, I created an ERC20 token in `src/Shell.sol` and deployed it on my testnet. Then, I started monitoring for the owner adding liquidity, and once liquidity was added, I created a fork of my testnet to test the token before making a purchase.
 
+
+![alt text](images/image6.png)
+
 ## Prerequisites
 
 - Python 3.8+
